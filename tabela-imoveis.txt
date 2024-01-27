@@ -1,0 +1,16 @@
+IMOVEIS
+CREATE TABLE `imoveis` (
+  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) NOT NULL,
+  `endereco` varchar(45) NOT NULL,
+  `bairro` varchar(45) NOT NULL,
+  `cidade` varchar(25) NOT NULL,
+  `cep` varchar(45) NOT NULL,
+  `tipo` varchar(45) NOT NULL,
+  `uf` varchar(45) NOT NULL,
+  `andar` varchar(45) NOT NULL,
+  `valoraluguel` decimal(7,2) NOT NULL,
+  `valorcondominio` decimal(7,2) NOT NULL,
+  `valoriptu` decimal(7,2) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;

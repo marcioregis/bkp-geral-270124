@@ -1,0 +1,28 @@
+INQUILINOS
+CREATE TABLE `inquilinos` (
+  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+  `nomeinq` varchar(45) NOT NULL,
+  `endereco` varchar(45) NOT NULL,
+  `imoveis_codigo` int(11) NOT NULL,
+  `bairro` varchar(25) NOT NULL,
+  `cidade` varchar(45) NOT NULL,
+  `cep` varchar(9) NOT NULL,
+  `uf` varchar(2) NOT NULL,
+  `cpf` varchar(20) NOT NULL,
+  `rg` varchar(40) NOT NULL,
+  `profissao` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `telefone` varchar(20) NOT NULL,
+  `celular` varchar(20) NOT NULL,
+  `enderecocom` varchar(45) NOT NULL,
+  `bairrocom` varchar(45) NOT NULL,
+  `cidadecom` varchar(45) NOT NULL,
+  `cepcom` varchar(10) NOT NULL,
+  `ufcom` varchar(2) NOT NULL,
+  `telefonecom` varchar(20) NOT NULL,
+  `celularcom` varchar(20) NOT NULL,
+  `mesanoaluguel` varchar(20) NOT NULL,
+  `datanasc` varchar(10) NOT NULL,
+  PRIMARY KEY (`codigo`),
+  KEY `fk_inquilinos_imoveis1_idx` (`imoveis_codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;

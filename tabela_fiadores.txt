@@ -1,0 +1,14 @@
+FIADORES
+CREATE TABLE `fiadores` (
+  `codigo` int(11) NOT NULL AUTO_INCREMENT,
+  `nomefiador` varchar(45) NOT NULL,
+  `nacionalidadef` varchar(45) NOT NULL,
+  `cpff` varchar(20) NOT NULL,
+  `rgf` varchar(20) NOT NULL,
+  `enderecof` varchar(45) NOT NULL,
+  `bairrof` varchar(45) NOT NULL,
+  `cidadef` varchar(45) NOT NULL,
+  `uff` varchar(2) NOT NULL,
+  `cepf` varchar(8) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
